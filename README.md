@@ -10,7 +10,7 @@ JOIN address a  ON s.address_id = a.address_id
 JOIN city c  ON a.city_id = c.city_id  
 JOIN store s2 ON s2.store_id = s.store_id  
 JOIN customer c2 ON s2.store_id = c2.store_id  
-GROUP BY manager, c.city  
+GROUP BY staff_id , c.city_id   
 HAVING customers > 300**
 
 ## Задание 2
